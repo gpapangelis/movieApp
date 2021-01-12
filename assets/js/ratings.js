@@ -1,4 +1,5 @@
 //Selecting elements from the DOM
+
 const buttonElement1 = document.querySelector('#recomend');
 const buttonElement2 = document.querySelector('#recomend2');
 let apis = []; //data from ratings response
