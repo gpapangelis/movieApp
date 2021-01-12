@@ -1,0 +1,177 @@
+.container {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+  }
+
+.form-group{
+    margin-bottom: 1rem;
+    
+}
+
+.table{
+    margin-left: 300px;
+    margin-right: auto;
+}
+
+body, html {
+    background-image: url('movies10.jpg');
+    background-color: black;
+    height: 100%;
+    margin: 0; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+h1{
+    font-weight: bold;
+    color: #fff;
+    font-size: 36px;
+}
+
+#er{
+    color: white;
+}
+
+#ir{
+    color: white;
+}
+
+
+
+table {  
+     
+	border-collapse:collapse;
+	border-bottom:2px solid gray;
+    font-family: Tahoma,Verdana,Segoe,sans-serif;
+    line-height: 1.5;
+    width: 760px;
+}
+
+tr {
+	border-top:1px solid gray;
+	text-align:center;	
+}
+
+button, table {
+    margin: 1px;
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
+
+tr:nth-child(even) {background: #FFFFFF}
+tr:nth-child(odd) {background: #BBBBBB}	
+
+#movieid{
+    width: 100px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    outline: none;
+    color: #495057;
+    background-color: #fff;
+    /* background-clip: padding-box; */
+    border: 1px solid #ced4de;
+    border-radius: .25rem;
+}
+
+
+#rating{
+    width: 100px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    outline: none;
+    color: #495057;
+    background-color: #fff;
+    /* background-clip: padding-box; */
+    border: 1px solid #ced4de;
+    border-radius: .25rem;
+}
+
+#btn{
+    color:black;
+    background-color: yellow;
+    font-size: 1rem;
+    outline: none;
+    min-height: 38px;
+    font-weight: 100;
+    text-align: center;
+    cursor: pointer;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    display: inline-block;
+}
+
+#recomend{
+    color:white;
+    background-color: red;
+    font-size: 1rem;
+    outline: none;
+    min-height: 38px;
+    font-weight: 100;
+    text-align: center;
+    cursor: pointer;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    display: inline-block;
+}
+
+#recomend2{
+    color:white;
+    background-color: red;
+    font-size: 1rem;
+    outline: none;
+    min-height: 38px;
+    font-weight: 100;
+    text-align: center;
+    cursor: pointer;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    display: inline-block;
+}
+
+#inputValue{
+    width: 760px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    outline: none;
+    color: #495057;
+    background-color: #fff;
+    /* background-clip: padding-box; */
+    border: 1px solid #ced4de;
+    border-radius: .25rem;
+}
+
+
+#search{
+    color: #fff;
+    background-color: #007bff;
+    font-size: 1rem;
+    outline: none;
+    min-height: 38px;
+    font-weight: 100;
+    text-align: center;
+    cursor: pointer;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    display: inline-block;
+}
+
