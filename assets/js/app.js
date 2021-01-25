@@ -1,5 +1,5 @@
 //Initian Values
-const url = 'http://62.217.127.19:8010/movie';
+const url = 'http://localhost:8080/movies';
 
 //Selecting elements from the DOM
 const buttonElement = document.querySelector('#search');  

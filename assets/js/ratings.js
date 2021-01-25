@@ -23,9 +23,9 @@ let users = [];
 let tainies = [];
 //console.log(maxid);
 
-const url1 = 'http://62.217.127.19:8010/ratings';
+const url1 = 'http://localhost:8080/ratings';
 var url2; // = 'http://62.217.127.19:8010/ratings/'+maxid;
-const url3 = 'http://62.217.127.19:8010/movie/'; //+ to movie id sthn function
+const url3 = 'http://localhost:8080/movies/'; //+ to movie id sthn function
 
 
 
@@ -124,7 +124,7 @@ async function postMovies(url1, data /* = {"movieList": value }*/) {
 }  
 
 async function postUser(){  //h function pou kanei get tis tainies tou xrhsth me to megalutero score apo ton algorithmo
-  url2 = 'http://62.217.127.19:8010/ratings/'+maxid;
+  url2 = 'http://localhost:8080/ratings/'+maxid;
   console.log(url2);
   fetch(url2)
       .then(response => response.json())
