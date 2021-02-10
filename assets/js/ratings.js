@@ -25,7 +25,7 @@ let tainies = [];
 
 const url1 = 'http://localhost:8080/ratings';
 var url2; // = 'http://62.217.127.19:8010/ratings/'+maxid;
-const url3 = 'http://localhost:8080/movies/'; //+ to movie id sthn function
+const url3 = 'http://localhost:8080/movies/';
 
 
 
@@ -42,13 +42,13 @@ buttonElement1.onclick = function(event){
     A.push(text);
     countObj++; //counter for user ratings (help for pcc)
     }
-    movies.sort(function(a, b) { //kanei sort tis tainies pou exei vathmologhsei o xrhsths me vash to id ths kathe tainias
+    movies.sort(function(a, b) { //sort movies which user had rate based on the id of every movie
       return a.movieid - b.movieid;
     });
     
     const value = A; //for post data value=object content
     
-    if(movies.length<3){                  //borei na bei kai exw apo to button
+    if(movies.length<3){
       alert("You must rate 3 movies");
     }
     else{
@@ -123,7 +123,7 @@ async function postMovies(url1, data /* = {"movieList": value }*/) {
   
 }  
 
-async function postUser(){  //h function pou kanei get tis tainies tou xrhsth me to megalutero score apo ton algorithmo
+async function postUser(){  //function for get user movies with the biggest score
   url2 = 'http://localhost:8080/ratings/'+maxid;
   console.log(url2);
   fetch(url2)
@@ -131,7 +131,7 @@ async function postUser(){  //h function pou kanei get tis tainies tou xrhsth me
       .then(data => {
         for (var i = 0; i < data.length; i++) {
             
-            if(Object.values(A) != data[i].movieId){   //elegxos na mhn einai oi ides tainies pou exei kanei rate o xrhsths
+            if(Object.values(A) != data[i].movieId){   
           
           let user = {movieid: data[i].movieId};
           users.push(user); 
@@ -144,7 +144,7 @@ async function postUser(){  //h function pou kanei get tis tainies tou xrhsth me
 }
 
 
-async function postUserMovies(url3, i){ //h function pou kanei shnexomena get gia kathe tainia pou exei o xrhsths
+async function postUserMovies(url3, i){ //continiously gets for every movie of the user
 
   //for (var i = 0; i < users.length; i++) {
 
@@ -152,7 +152,7 @@ async function postUserMovies(url3, i){ //h function pou kanei shnexomena get gi
       .then(response => response.json())
       .then(data => {
         //console.log(data);
-        let tainia = {movieid: data[0].movieId, title: data[0].title, genre: data[0].genres}; //apothikeush tainiwn
+        let tainia = {movieid: data[0].movieId, title: data[0].title, genre: data[0].genres}; //store movies
         tainies.push(tainia);
         
       });
@@ -183,7 +183,7 @@ for (i = 0; i < apis.length; i++) {
 
 
 
-  function tableOk(apis, countObj){ //function pou sto object apis vazei to id tou xrhsth kai mesa se array of objects ta movieid kai ratings gia tis tainies kathe xrhsth
+  function tableOk(apis, countObj){ 
     //console.log(apis);
     //let apis1 = [];
     for (var i = 0; i < apis.length-countObj; i++) {
