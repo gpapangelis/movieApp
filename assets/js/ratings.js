@@ -217,7 +217,7 @@ for (i = 0; i < apis.length; i++) {
 
 
 
-  function clearOk(apis1){  //function pou thekarei na exei to idio arithmo tainiwn me ton client
+  function clearOk(apis1){  //function pou tsekarei na exei to idio arithmo tainiwn me ton client
     //meter=0;
     for (i=0; i<apis1.length; i++){ //function for object OK tha is have the same number of movies with the client
       if(apis1[i] != null){
